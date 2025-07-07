@@ -1,0 +1,112 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "White Blazers",
+      "brand": "adidas",
+      "price": 50,
+      "image": "images/Blazers collection/product1.jpg",
+      "rating": 5,
+      "category": "blazers"
+    },
+    {
+      "id": 2,
+      "title": "Brown Blazers",
+      "brand": "adidas",
+      "price": 50,
+      "image": "images/Blazers collection/product2.jpg",
+      "rating": 5,
+      "category": "blazers"
+    },
+    {
+      "id": 3,
+      "title": "Blue Blazers",
+      "brand": "adidas",
+      "price": 50,
+      "image": "images/Blazers collection/product3.jpg",
+      "rating": 5,
+      "category": "blazers"
+    },
+    {
+      "id": 4,
+      "title": "Navy Blue Blazers",
+      "brand": "adidas",
+      "price": 50,
+      "image": "images/Blazers collection/product4.jpg",
+      "rating": 5,
+      "category": "blazers"
+    },
+    {
+      "id": 5,
+      "title": "Gray Blazers",
+      "brand": "adidas",
+      "price": 50,
+      "image": "images/Blazers collection/product5.jpg",
+      "rating": 5,
+      "category": "blazers"
+    },
+    {
+      "id": 6,
+      "title": "Pattern Blazers",
+      "brand": "adidas",
+      "price": 50,
+      "image": "images/Blazers collection/product6.jpg",
+      "rating": 5,
+      "category": "blazers"
+    },
+    {
+      "id": 7,
+      "title": "Trendy Blazers",
+      "brand": "adidas",
+      "price": 50,
+      "image": "images/Blazers collection/product7.jpg",
+      "rating": 5,
+      "category": "blazers"
+    },
+    {
+      "id": 8,
+      "title": "Formal Blazers",
+      "brand": "adidas",
+      "price": 50,
+      "image": "images/Blazers collection/product8.jpg",
+      "rating": 5,
+      "category": "blazers"
+    },
+    {
+      "id": 9,
+      "title": "Striped Blazers",
+      "brand": "adidas",
+      "price": 50,
+      "image": "images/Blazers collection/product9.jpg",
+      "rating": 5,
+      "category": "blazers"
+    },
+    {
+      "id": 10,
+      "title": "Coffee Brown Blazers",
+      "brand": "adidas",
+      "price": 50,
+      "image": "images/Blazers collection/product10.jpg",
+      "rating": 5,
+      "category": "blazers"
+    },
+    {
+      "id": 11,
+      "title": "Office Blazers",
+      "brand": "adidas",
+      "price": 50,
+      "image": "images/Blazers collection/product11.jpg",
+      "rating": 5,
+      "category": "blazers"
+    },
+    {
+      "id": 12,
+      "title": "Casuals Blazers",
+      "brand": "adidas",
+      "price": 50,
+      "image": "images/Blazers collection/product12.jpg",
+      "rating": 5,
+      "category": "blazers"
+    }
+  ]
+}

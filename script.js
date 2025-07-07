@@ -12,7 +12,9 @@ if(close){
     });
 }
 
+
 //cart codeing for vesibility of the cart
+
 
 const cartIcon=document.getElementById("cartpic");
 const cart=document.querySelector(".cart");
@@ -20,7 +22,9 @@ const cartClose=document.getElementById("cart-close");
 cartIcon.addEventListener("click",()=>cart.classList.add("active"));
 cartClose.addEventListener("click",()=>cart.classList.remove("active"));
 
+
 //adding the items in the cart
+
 
 const addCartButtons=document.querySelectorAll(".add-cart");
 addCartButtons.forEach(button=>{
@@ -111,8 +115,11 @@ const updateTotalPrice=()=>
         total+=price*quantity;
     });
     totalPriceElement.textContent=`$${total}`;
-};
+}; 
+
+
 //cart visibility
+
 
 let cartItemCount=0;
 const updateCartCount= change=>{
@@ -127,6 +134,8 @@ const updateCartCount= change=>{
         cartItemCountBadge.textContent="";
     }
 };
+
+
 
 
 
