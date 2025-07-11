@@ -20,15 +20,28 @@
     top: 0px;
     left: 0px;
 }
+#header span{
+    background-color: orangered;
+    border-radius: 30px;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    right: 25px;
+    top: 5px;
+}
+
+
 #header img{
-    width: 150%;;
+    width: 150%;
 }
 #header h4{
     position: absolute;
     padding: 45px;
     margin-top: 40px;
 }
-
 #h-List{
     display: flex;
 }
@@ -42,6 +55,28 @@
     font-size: 20px;
     font-weight:  700px; 
     transition: 0.2s;
+}
+#h-List li{
+    color: black;
+    font-size: 20px;
+    transition: 0.2s;
+    cursor: pointer;
+    }
+#h-List li button{
+    border: none;
+    background-color:rgb(122, 140, 156);
+    font-size: 20px;
+    font-weight:  700px;
+    border: none;
+    cursor: pointer;
+}
+#h-List li button:hover{
+    color:brown;
+    text-decoration: underline;
+}
+#h-List li:hover{
+     color:brown;
+    text-decoration: underline;
 }
 #h-List li a:hover,
 #h-List li a.active {
@@ -75,8 +110,8 @@
     justify-content: center;
 }
 #background #backgroundH2,#backgroundH1{
-    color: blue;
-    font-size: 100px;
+    color: rgb(10, 10, 224);
+    font-size: 120px;
 }
 #background p{
     font-size: 18px;
@@ -113,171 +148,14 @@
     background-color: antiquewhite;
     display: flex;
     flex-wrap: wrap;
+    /* align-items: center;
+    justify-content: center; */
 }
 
 .main-section .main-collection{
     background-color: rgb(181, 181, 205);
     width:15%;
-    padding: 20px 1px;
-    border-radius: 15px;
-    border-color: rgb(6, 184, 83);
-    text-align: center;
-    cursor: pointer;
-    margin: 30px;
-}
-#main-product1 .main-collection img{
-   width: 70%;
-   border-radius: 15px;
-}
-
-#main-product1 .main-collection:hover{
-    box-shadow: 2px 2px 10px rgb(50, 15, 202)
-}
-#main-product1 .main-collection .des .star{
-    color: rgb(215, 155, 3);
-}
-}
-
-@media(max-width:889px){
-        #h-List{
-            cursor: pointer;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            position:fixed;
-            top: 0;
-            right: -300px;
-            height: 70vh;
-            width: 300px;
-            background-color: rgb(171, 195, 216);
-        }
-
-    #menuicon{
-        display: initial;
-        cursor: pointer;
-    }
-    #h-List.flag{ 
-        right: 0px;
-        transition: 0.5s;
-    }
-    #h-List li{
-        margin-top: 10px;
-    }
-    #close{
-        display: initial;
-        position: absolute;
-        top: 20px;
-        left: 90%;
-        color:black;
-    }
-#footer{
-    background-color: rgb(122, 140, 156);
-    color: greenyellow;
-    /* padding: 20px 80px; */
-    display: flex;
-    gap: 10px;
-    justify-content: space-between;
-    text-align: center;
-}
-#header {
-    display:flex;
-    justify-content: space-between;
-    padding: 40px 70px;
-    background-color:rgb(122, 140, 156);
-    position: sticky;
-    top: 0px;
-    left: 0px;
-}
-#header h4{
-    position: absolute;
-    padding: 45px;
-    margin-top: 40px;
-}
-#header img{
-    width: 150%;;
-}
-
-#h-List{
-    display: flex;
-}
-#h-List li {
-    list-style: none;
-    padding: 20px 20px;
-    /* position:relative; */
-}
-#h-List li a{ 
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
-    font-weight:  700px; 
-    transition: 0.2s;
-}
-#h-List li a:hover,
-#h-List li a.active {
-    color:brown;
-    text-decoration: underline;
-
-}
-
-/*background content in upper phase*/
-
-#background{
-    background-image:url(images/background\ image.jpg);
-    min-height:100vh;
-    background-repeat: no-repeat;
-    background-size:cover;
-    display: flex;
-    padding: 0 80px;
-    align-items: start;
-    flex-direction: column;
-    justify-content: center;
-}
-#background #backgroundH2,#backgroundH1{
-    color: blue;
-    font-size: 100px;
-}
-#background p{
-    font-size: 18px;
-    
-}
-#background button{
-    background-color: rgb(255, 47, 95);
-    font-size: large;
-    padding: 10px;
-    margin-top: 20px;
-    color: greenyellow;
-    border-radius: 10px;
-}
-
-
-/*main collection in the home page*/
-
-/*New Arrival collection*/
-#BlazerHeader,#BlazerPara{
     padding: 20px 10px;
-    text-align: center;
-    text-shadow: 5px 5px 10px rgb(20, 20, 209);
-}
-.main-section.collection1 #imagecart{
-    width: 35px;
-    height: 40px;
-    border-radius: 80px;
-    font-weight: 200;
-    color:aquamarine;
-    position: absolute;
-    bottom: 50px;
-    right: 0px;
-}
-.main-section{
-    background-color: antiquewhite;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.main-section .main-collection{
-    background-color: rgb(181, 181, 205);
-    width:35%;
-    padding: 20px 1px;
     border-radius: 15px;
     border-color: rgb(6, 184, 83);
     text-align: center;
@@ -285,8 +163,11 @@
     margin: 30px;
 }
 #main-product1 .main-collection img{
-   width: 70%;
-   border-radius: 15px;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+
 }
 
 #main-product1 .main-collection:hover{
@@ -295,8 +176,6 @@
 #main-product1 .main-collection .des .star{
     color: rgb(215, 155, 3);
 }
-
-
 
 }
 
@@ -311,7 +190,7 @@
     border: 2px solid gray;
     border-radius: 10px;
     margin: 40px;
-    margin-left: 20px;
+    margin-left: 70px;
     cursor: pointer;
     box-sizing: border-box; 
 }
@@ -354,6 +233,8 @@
 #product1{
     display: flex;
     flex-wrap: wrap;
+    margin-left:60px;
+    
 }
 #product1 .pro img {
     width: 100%;
@@ -363,11 +244,11 @@
 }
 
 
+/* cartitemcount */
 
-
-.cart-item-count{
+ #h-List li .cart-item-count{
     top: 7px;
-    right: 30px;
+    right: 20px;
     width:20px;
     height: 20px;
     background: rgb(233, 87, 34);
@@ -379,7 +260,7 @@
     justify-content: center;
     align-items: center;
     visibility: hidden;
-}
+} 
 
     /* cart configuration  */
 
@@ -389,7 +270,7 @@
     right: -100%;
     width: 360px;
     height: 100%;
-    background: white;
+    background: rgb(206, 202, 202);
     box-shadow: -2px 0 10px rgb(0,0,0,0.1);
     padding:65px 20px 40px;
     z-index: 100;
@@ -471,7 +352,21 @@
     margin-left: 10px;
     font-weight: 600px;
 }
-#cart-close{
+
+.cart-by-btn button{
+    width: 150px;
+    font-size: 2rem;
+    background-color: rgba(10, 245, 22, 0.24);
+    margin-top: 20px;
+    margin-left: 110px;
+    border-radius: 20px; 
+}
+.cart-by-btn button:hover{
+    background-color: rgba(10, 245, 22, 0.644);
+    cursor: pointer;
+}
+
+ #cart-close{
     position: absolute;
     top: 20px;
     margin-left: 80%;
@@ -479,6 +374,7 @@
 }
 
 /* shoping header configuration */
+
 #ShopH2,#ShopPara{
     text-align: center;
     text-shadow:5px 5px 10px rgb(20, 20, 209);
@@ -493,7 +389,7 @@
 .footer {
   display: flex;
   justify-content: center;
-  gap: 150px; 
+  gap: 200px; 
   flex-wrap: wrap;
   text-align: left;
 }
@@ -523,6 +419,391 @@
   padding-left: 10px;
 }
 
+/* signup styles */
 
+.signUp-Wrap {
+    position: fixed;
+    visibility: hidden;
+    top: -100%;
+    width: 100%;
+    background-color: rgba(250, 235, 215, 0.95);
+    padding: 40px 20px;
+    transition: top 0.8s ease-in-out;
+}
+
+/* When active (show it) */
+.signUp-Wrap.active {
+    top: 20%;
+    visibility: visible;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signUp-Wrap h1{
+    font-size: 2rem;
+    display: inline-block;
+    margin-top: -300px;
+    margin-right: -300px;
+    margin-bottom: 80px;
+}
+.signUp-Wrap div{
+    margin: 10px;
+     display: flex;         
+    align-items: center;
+}
+.signUp-Wrap button{
+    margin: 10px;
+    display: inline-block;
+    margin-left: 90px;
+    border-radius: 10px;
+    font-size: large;
+    width: 100px;
+    height: 35px;
+
+}
+.signUp-Wrap button:hover{
+    background-color: rgba(0, 255, 42, 0.493);
+}
+.signUp-Wrap input{
+    height: 35px;
+    width: 40vh;
+    padding: 5px;
+    border-radius: 30px;
+    
+}
+
+.signUp-Wrap input:hover{
+    background-color: #f5eeee;
+}
+.signUp-Wrap label{
+    
+    border-radius: 20%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;           
+    height: 45px;  
+    margin-right: 5px;        
+}
+#Login-info{
+    margin-left: 130px;
+    margin-bottom: 20px;
+}
+#LoginSpan{
+    text-decoration: underline;
+    color: rgb(33, 9, 247);
+    cursor: pointer;
+}
+
+/* Login style */
+
+.Login-Wrap {
+    position: fixed;
+    visibility: hidden;
+    top: -100%;
+    width: 100%;
+    background-color: rgba(250, 235, 215, 0.95);
+    padding: 40px 20px;
+    transition: top 0.8s ease-in-out;
+
+}
+.Login-Wrap h1{
+    font-size: 2rem;
+    display: inline-block;
+    margin-left: 48%;
+    margin-top: 10px;
+}
+
+.Login-Wrap form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: center;
+}
+.Login-Wrap div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.Login-Wrap input{
+    height: 35px;
+    width: 40vh;
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.Login-Wrap button{
+     margin: 10px;
+     margin-left: 35px;
+    border-radius: 5px;
+    font-size: large;
+    width: 100px;
+    height: 35px;
+}
+.Login-Wrap button:hover{
+    background-color: rgba(0, 255, 42, 0.493);
+}
+.Login-Wrap.LoginActive{
+    top: 20%;
+    visibility: visible;
+}
+
+/*Payment style*/
+
+.payment{
+    display: none;
+    flex-direction: column;
+    width: 600px;
+    height: 500px;
+    background-color: #3ccc2f;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    padding: 10px 50px;
+    border-radius: 30px;
+    position: fixed;
+}
+.payment label{
+    padding: 10px;
+    color: #4e3535;
+}
+.payment input{
+    border: none;
+    border-bottom: 2px solid black;
+    border-radius: 10px;
+    height: 30px;
+    padding: 5px;
+}
+.payment img{
+    padding: 10px;
+}
+.card-information{
+    padding: 10px;
+}
+.card-information #card-cv{
+    margin-left: 20px;
+    border: 2px inset red;
+    box-shadow:2px 2px 5px black ;
+}
+.payment button{
+    height:70px;
+    font-size: 20px;
+    background-color: rgba(252, 77, 14, 0.877);
+    border-radius: 10px;
+}
+.payment button:hover{
+    box-shadow:2px 2px 5px rgb(15, 35, 221) ;
+}
+.payment i{
+    margin-left: 65vh;
+    margin-top: 10px;
+    font-size: large;
+}
+@media(max-width:889px){
+        #h-List{
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            position:fixed;
+            top: 0;
+            right: -300px;
+            height: 70vh;
+            width: 300px;
+            background-color: rgb(171, 195, 216);
+        }
+    #menuicon{
+        display: initial;
+        cursor: pointer;
+    }
+    #h-List.flag{
+        right: 0px;
+        transition: 0.5s;
+    }
+    #h-List li{
+        margin-top: 10px;
+    }
+    #close{
+        display: initial;
+        position: absolute;
+        top: 20px;
+        left: 90%;
+        color:black;
+    }
+
+/*Home footer*/
+
+#footer{
+    background-color: rgb(122, 140, 156);
+    color: greenyellow;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    text-align: center;
+}
+#footer img{
+    width: 110px;
+    height: 90px;
+}
+
+/*shoping footer*/
+
+.footer-container {
+  background-color: #111;
+  padding: 40px 50px;
+  color: white;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  gap: 10px; 
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+
+
+#header {
+    display:flex;
+    justify-content: space-between;
+    padding: 40px 70px;
+    background-color:rgb(122, 140, 156);
+    position: sticky;
+    top: 0px;
+    left: 0px;
+}
+#header span {
+        background-color: orangered;
+        border-radius: 30px;
+        height: 20px;
+        width: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        right: -45px;
+        top: -70px;
+    }
+#header h4{
+    position: absolute;
+    padding: 45px;
+    margin-top: 40px;
+}
+#header img{
+    width: 150%;;
+}
+
+#h-List{
+    display: flex;
+}
+#h-List li button{
+    background-color:rgb(171, 195, 216) ;
+}
+
+#h-List li {
+    list-style: none;
+    padding: 20px 20px;
+    /* position:relative; */
+}
+#h-List li a{ 
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight:  700px; 
+    transition: 0.2s;
+}
+#h-List li a:hover,
+#h-List li a.active {
+    color:brown;
+    text-decoration: underline;
+
+}
+
+/*background content in upper phase*/
+
+#background{
+    background-image:url(images/background\ image.jpg);
+    min-height:100vh;
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: flex;
+    padding: 0 80px;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+}
+#background #backgroundH2,#backgroundH1{
+    color: blue;
+    font-size: 90px;
+}
+
+#background p{
+    font-size: 18px;
+    
+}
+#background button{
+    background-color: rgb(255, 47, 95);
+    font-size: large;
+    padding: 10px;
+    margin-top: 20px;
+    color: greenyellow;
+    border-radius: 10px;
+}
+
+
+/*main collection in the home page*/
+
+/*New Arrival collection*/
+#BlazerHeader,#BlazerPara{
+    padding: 20px 10px;
+    text-align: center;
+    text-shadow: 5px 5px 10px rgb(20, 20, 209);
+}
+.main-section.collection1 #imagecart{
+    width: 35px;
+    height: 40px;
+    border-radius: 80px;
+    font-weight: 200;
+    color:aquamarine;
+    position: absolute;
+    bottom: 50px;
+    right: 0px;
+}
+.main-section{
+    background-color: antiquewhite;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-section .main-collection{
+    background-color: rgb(181, 181, 205);
+    width:35%;
+    padding: 20px 1px;
+    border-radius: 15px;
+    border-color: rgb(6, 184, 83);
+    text-align: center;
+    cursor: pointer;
+    margin: 30px;
+}
+#main-product1 .main-collection img{
+   width: 70%;
+   border-radius: 15px;
+}
+
+#main-product1 .main-collection:hover{
+    box-shadow: 2px 2px 10px rgb(50, 15, 202)
+}
+#main-product1 .main-collection .des .star{
+    color: rgb(215, 155, 3);
+}
+}
 
 

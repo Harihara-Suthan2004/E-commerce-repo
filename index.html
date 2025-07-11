@@ -10,13 +10,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+
 <!--header elements-->
+
 <section id="header">
     <a href="#"> <img src="images/footerimagelogo.png" width="90px" height="100px" alt="company log"></a>
-    <h4>SpotPic</h4>    <div>
+    <h4>SpotPic</h4>   
+     <div>
     <ul id="h-List">
         <li ><a class="active" href="index.html">Home</a></li>
         <li><a href="shop.html">Shop</a></li>
+        <li class="header-signup" id="signUpModal"><button>SignUp</button></li>
         <a href="#" id="close"><i class="far fa-times"></i></a>
     </ul>
          <div class="menuclass">
@@ -24,15 +28,81 @@
          </div>
         
     </div>
-
 </section>
+
+
+<!--signUp Configuration-->
+
+
+<div class="signUp-Wrap" id="signUpForm">
+    <h1>SignUp</h1>
+    <form id="signUp-form">
+        <div>
+            <label for="FirstName-inp">
+                <img src="images/personicon.png" alt="firstNameIcon" width="30px" height="30px" >
+            </label>
+        <input type="text" name="FirstName"  id="FirstName-inp" placeholder="Firstname">
+        </div>
+        <div>
+            <label for="Email-inp">
+                <img src="images/mailicon.png" alt="EmailIcon" width="30px" height="30px">
+            </label>
+        <input type="email" name="EMail" id="Email-inp" placeholder="Email">
+        </div>
+        <div>
+            <label for="Password-inp">
+                <img src="images/passwordicon.png" alt="firstNameIcon" width="30px" height="30px" >
+            </label>
+            <input type="password" name="password" id="Password-inp" placeholder="password">
+        </div>
+        <div>
+            <label for="Password-inp">
+                <img src="images/passwordicon.png" alt="firstNameIcon" width="30px" height="30px" >
+            </label>
+            <input type="password" name="repeat-password" id="RPassword-inp" placeholder="Repeat-password">
+        </div>
+        <button id="signUpButton" type="submit" >SignUp</button>
+        <button id="Close-btn" type="button">Close</button>
+        <p id="Login-info">Already have an account ?..<span id="LoginSpan"> Login</span></p>
+    </form>
+</div>
+
+<!--Login configaration-->
+
+<div class="Login-Wrap" id="LoginForm">
+    <h1>Login</h1>
+    <form >
+        <div>
+            <label for="Email-inp">
+                <img src="images/mailicon.png" alt="EmailIcon" width="30px" height="30px">
+            </label>
+        <input type="email" name="EMail" id="LoginEmail-inp" placeholder="Email">
+        </div>
+        <div>
+            <label for="Password-inp">
+                <img src="images/passwordicon.png" alt="firstNameIcon" width="30px" height="30px" >
+            </label>
+            <input type="password" name="password" id="LoginPassword-inp" placeholder="password">
+        </div>
+        <button id="LoginButton" type="submit" >Login</button>
+        <button id="Login-close" type="button">Close</button>
+   
+    </form>
+</div>
+
 <!--body element-->
+
 <section id="background">
 <h2 id="backgroundH2">Super value</h2>
 <h1 id="backgroundH1">on all products</h1><br>
 <p id="backgroundP"> save more with coupons & up to 70% off!</p><br>
 <a href="shop.html"><button>shop now</button></a>
 </section>
+
+
+<!--footer elements-->
+
+
 <section id="footer">
     <div class="feature">
         <img src="images/delivary pic.png" alt="shipping available" width="200px" height="200 px">
@@ -50,7 +120,9 @@
 
     <h1 id="BlazerHeader" >New Arrivales</h1>
     <p id="BlazerPara">Blazer Collection For Mens and Children</p>
+
 <!--blazers collection-->
+
 <section class="main-section" id="main-product1">
     <div class="main-collection">
         <div class="collection1">
@@ -235,6 +307,7 @@
     
 
 </section>
+
  <script src="script.js"></script>
 </body>
 </html>

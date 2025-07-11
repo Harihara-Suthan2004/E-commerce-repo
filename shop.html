@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+
 <!--header elements-->
 
 <section id="header">
@@ -21,7 +22,7 @@
         <li><a class="active" href="index.html">Shop</a></li>
         <li><img src="images/cart.png" id="cartpic" alt="cart"></li>
         <a href="#" id="close"><i class="fas fa-times"></i></a>
-        <span class="cart-item-count"></span>
+        <span class="cart-item-count">0</span>
     </ul>
          <div class="menuclass">
             <img src="images/menu.png" id="menuicon" alt="menu bar">
@@ -46,12 +47,33 @@
         <div class="total-title">Total</div>
         <div class="total-price">$0</div>
     </div>
+    <div class="cart-by-btn"><button id="payment-btn">BuyNow</button></div>
     <i class="fas fa-times" id="cart-close"></i>
 </div>
 
+<!-- Payment form-->
+
+<div class="payment">
+    <i class="fas fa-times" id="payment-close"></i>
+    <h1 class="payTitle">Personal Information</h1>
+    <label >User Name</label>
+    <input type="text" placeholder="User Name" class="Payment-data">
+    <label>Phone Number</label>
+    <input type="text" placeholder="+91.." class="Payment-data">
+    <label>Address</label>
+    <input type="text" placeholder="Address" class="Payment-data">
+    <h1 class="payTitle">card Information</h1>
+    <img src="images/paymentImage.jpg" alt="payment" width="110px" >
+    <input type="text" class="Payment-data" placeholder="card Number">
+    <div class="card-information">
+        <input type="text" placeholder="Date" id="date">
+        <input type="text" placeholder="year" id="year">
+        <input type="text" placeholder="CVV" id="card-cv">
+    </div>
+    <button>Place Order</button>
+</div>
 
 <!--product configuration-->
-
 
 <section id="product1">
 

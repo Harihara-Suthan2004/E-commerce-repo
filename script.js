@@ -1,3 +1,111 @@
+
+//signUp code
+const signup = document.querySelector(".signUp-Wrap");
+const signUpBtn = document.querySelector("#signUpModal");
+const CloseBtn=document.querySelector("#Close-btn")
+if(signUpBtn){
+signUpBtn.addEventListener("click", () => {
+    signup.classList.add("active");
+    // LoginWrap.classList.remove("LoginActive");
+});
+}
+if(CloseBtn){
+    CloseBtn.addEventListener("click", () => {
+    signup.classList.remove("active");
+    // LoginWrap.classList.remove("LoginActive");
+});
+
+}
+
+//Login code
+const LoginSpan=document.querySelector("#LoginSpan");
+const LoginCloseBtn=document.querySelector("#Login-close")
+
+const LoginWrap=document.querySelector(".Login-Wrap");
+
+if(LoginSpan){
+LoginSpan.addEventListener("click",()=> {
+    LoginWrap.classList.add("LoginActive");
+    signup.classList.remove("active");
+})
+}
+if(LoginCloseBtn){
+    LoginCloseBtn.addEventListener("click",()=> {
+    LoginWrap.classList.remove("LoginActive");
+})
+}
+
+ 
+// SignUp validation
+
+
+const form=document.querySelector("#signUp-form");
+const firstName_input=document.querySelector("#FirstName-inp");
+const Email_input=document.querySelector("#Email-inp");
+const Password_input=document.querySelector("#Password-inp");
+const Repeat_password_input=document.querySelector("#RPassword-inp");
+if(form){
+    form.addEventListener("submit",(e)=>{
+        
+        let errors=[];
+        if(firstName_input){
+            errors=getSignUpFormErrors(firstName_input.value,Email_input.value,Password_input.value,Repeat_password_input.value);
+        }
+        else{
+            errors=getLoginFormErrors(Email_input.value,Password_input.value);
+        }
+        if (errors.length > 0) {
+            e.preventDefault();
+            alert(errors.join("\n"));
+        }
+    });
+}
+function getSignUpFormErrors(FirstName,Email,Password,repearPassword){
+    let errors=[];
+    if(FirstName==="" || FirstName===null){
+        errors.push("firstName is required");
+    }
+     if(Email==="" || Email===null){
+        errors.push("Email is required");
+    }
+     if(Password==="" || Password===null){
+        errors.push("Password is required");
+    }
+     if(repearPassword==="" || repearPassword===null){
+        errors.push("repeatPassword is required");
+    }
+    return errors;
+}
+
+//Login validation
+
+const loginForm = document.querySelector("#LoginForm"); 
+const loginEmail_input = document.querySelector("#LoginEmail-inp");
+const loginPassword_input = document.querySelector("#LoginPassword-inp");
+
+if (loginForm) {
+    loginForm.addEventListener("submit", (e) => {
+        const errors = getLoginFormErrors(loginEmail_input.value,loginPassword_input.value);
+        if (errors.length > 0) {
+            e.preventDefault();
+            alert(errors.join("\n"));
+        }
+    });
+}
+
+function getLoginFormErrors(email, password) {
+    let errors = [];
+    if (email === "" || email === null) {
+        errors.push("Email is required");
+    }
+    if (password === "" || password === null) {
+        errors.push("Password is required");
+    }
+    return errors;
+}
+
+
+
 const bar=document.getElementById('menuicon');
 const closed=document.getElementById('close');
 const nav=document.getElementById('h-List');
@@ -21,18 +129,6 @@ const cart=document.querySelector(".cart");
 const cartClose=document.getElementById("cart-close");
 cartIcon.addEventListener("click",()=>cart.classList.add("active"));
 cartClose.addEventListener("click",()=>cart.classList.remove("active"));
-
-
-//adding the items in the cart
-
-
-const addCartButtons=document.querySelectorAll(".add-cart");
-addCartButtons.forEach(button=>{
-    button.addEventListener("click", Event=>{
-        const productBox=Event.target.closest(".pro");
-        addToCart(productBox);
-    });
-});
 
 
 
@@ -100,6 +196,19 @@ updateCartCount(1);
 
 };
 
+
+//adding the items in the cart
+
+
+console.log("clicked")
+const addCartButtons=document.querySelectorAll(".add-cart");
+addCartButtons.forEach(button=>{
+    button.addEventListener("click", Event=>{
+        const productBox=Event.target.closest(".pro");
+        addToCart(productBox);
+    });
+});
+
 //total price
 
 const updateTotalPrice=()=>
@@ -136,8 +245,23 @@ const updateCartCount= change=>{
 };
 
 
+//payment configuration
 
 
-
-
+const paymentModel=document.querySelector(".payment");
+const payment_close=document.getElementById("payment-close");
+const payment_btn=document.getElementById("payment-btn");
+payment_btn.addEventListener('click',
+    function(){
+        if(cartItemCount >0){
+            paymentModel.style.display="flex";
+            }
+        else{
+            alert("your cart is empty")
+        }
+});
+payment_close.addEventListener('click',
+    function(){
+            paymentModel.style.display="none";
+});
 
